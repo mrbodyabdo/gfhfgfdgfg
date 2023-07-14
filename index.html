@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <head>
+        <title>Abdul Malik VI GOLD CRM LIVE Rate</title>
+        <meta charset="utf-8">
+        <meta http-equiv="refresh" content="10"; url=" /server.php">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" type="image/png" href="img/vigold.png">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <style>
+            .column {
+                float: left;
+                width: 50%;
+                border: 1px solid #814010;
+                text-align: center;
+                padding: 19px;
+                color: white;
+                background: black;
+
+            }
+
+            .container-fluid {
+                background: #000000;
+            }
+
+            .colum {
+                float: left;
+                width: 33.333333%;
+                padding: 6px 70px 6px;
+
+
+            }
+
+            span {
+                font-size: 37px;
+            }
+
+            .columns {
+                float: left;
+                width: 50%;
+                text-align: center;
+                font-size: 18px;
+                background: #814010;
+                color: white;
+                padding: 12px 0px 11px;
+                font-weight: 600;
+                margin-top: 77px;
+            }
+
+            p {
+                margin: 0 0 0px !important;
+            }
+
+
+            .row:after {
+
+                display: table;
+                clear: both;
+            }
+
+            #uploadPreview {
+                height: 99px;
+                width: 104px;
+
+
+            }
+
+            #fd {
+                font-size: 32px;
+            }
+
+            #til {
+                text-align: center;
+                font-size: 26px;
+                FONT-WEIGHT: 500;
+                color: white;
+                margin: 31px 10px -63px !important;
+            }
+
+            @media  only screen and (max-width: 600px) {
+                span {
+                    font-size: 20px;
+                }
+
+                #fd {
+                    font-size: 20px;
+                }
+
+                .columns {
+                    font-size: 15px;
+                }
+
+                #dat {
+                    font-size: 17px;
+                }
+
+                .colum {
+
+                    padding: 1px;
+                }
+
+                #txt {
+                    margin-top: 18px;
+                }
+
+                #til {
+                    text-align: center;
+                    font-size: 11px;
+                    color: white;
+                    margin: 24px 0px -52px !important;
+                }
+            }
+
+            @media  only screen and (max-width: 375px) {
+                span {
+                    font-size: 20px;
+                }
+
+                .colum {
+                    padding: 1px;
+                }
+
+                #fd {
+                    font-size: 20px;
+                }
+
+                .column {
+                    padding: 14px;
+                }
+
+                .columns {
+                    font-size: 15px;
+
+                }
+
+                #dat {
+                    font-size: 16px;
+                }
+
+                #txt {
+                    margin-top: 18px;
+                }
+            }
+        </style>
+    </head>
+
+<body style="background-image:url('img/bg.png');">
+    <div class="container-fluid">
+        <div class="colum" onload="startTime()">
+            <div class="left" style="float: left; color: white;">
+                <div id="txt"></div>
+            </div>
+
+        </div>
+          <div class="colum">
+            <center>
+           
+            <p id="til" style="color:red";>مجوهرات عبد الملك</p>
+
+        </div>
+        <div class="colum">
+            <div class="right" style="float: right; color: white;">
+                                <h3 id="fd">$ 1959.57</h3>
+                                <p style="float: right;">PER OUNCE</p>
+            </div>
+        </div>
+    </div>
+    <div id="con" class="container">
+       <div class="row">
+            <div class="columns">
+                <p style="color:red";>عيار</p>
+
+            </div>
+            <div class="columns">
+                <p style="color:red";>سعر الذهب</p>
+                </p>
+
+            </div>
+
+        </div>
+                <div class="row">
+            <div class="column">
+                <span>24 ك</span>
+
+            </div>
+            <div class="column">
+                
+                <span>19.473</span>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <span>22 ك</span>
+
+            </div>
+            <div class="column">
+                <span>17.857</span>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <span>21 ك</span>
+
+            </div>
+            <div class="column">
+                  <span>17.039</span>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="column">
+                <span>18 ك</span>
+
+            </div>
+
+            <div class="column">
+                 <span>14.605</span>
+            </div>
+
+        </div>
+            </div>
+    <footer style="background:#814010;padding: 10px; color: white;margin-top: 72px;">
+        <CENTER>
+            <h4>Powered by Versatile International</h4>
+        </CENTER>
+
+    </footer>
+</body>
+
+
+<script>
+    function currentTime() {
+        var date = new Date(); /* creating object of Date class */
+        var hour = date.getHours();
+        var min = date.getMinutes();
+        var sec = date.getSeconds();
+        var midday = "صباحا";
+        midday = (hour >= 12) ? "مساء" : "صباحا"; /* assigning AM/PM */
+        hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12) : hour); /* assigning hour in 12-hour format */
+        hour = updateTime(hour);
+        min = updateTime(min);
+        sec = updateTime(sec);
+        document.getElementById("clock").innerText = hour + " : " + min + " : " + sec + " " + midday; /* adding time to the div */
+        var t = setTimeout(currentTime, 1000); /* setting timer */
+    }
+
+    function updateTime(k) {
+        /* appending 0 before time elements if less than 10 */
+        if (k < 10) {
+            return "0" + k;
+        } else {
+            return k;
+        }
+    }
+
+    currentTime();
+</script>
+<script>
+    var canvas = document.getElementById("canvas");
+    var ctx = canvas.getContext("2d");
+    var radius = canvas.height / 2;
+    ctx.translate(radius, radius);
+    radius = radius * 0.90
+    setInterval(drawClock, 1000);
+
+    function drawClock() {
+        drawFace(ctx, radius);
+        drawNumbers(ctx, radius);
+        drawTime(ctx, radius);
+    }
+
+    function drawFace(ctx, radius) {
+        var grad;
+        ctx.beginPath();
+        ctx.arc(0, 0, radius, 0, 2 * Math.PI);
+        ctx.fillStyle = 'white';
+        ctx.fill();
+        grad = ctx.createRadialGradient(0, 0, radius * 0.95, 0, 0, radius * 1.05);
+        grad.addColorStop(0, '#333');
+        grad.addColorStop(0.5, 'white');
+        grad.addColorStop(1, '#333');
+        ctx.strokeStyle = grad;
+        ctx.lineWidth = radius * 0.1;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.arc(0, 0, radius * 0.1, 0, 2 * Math.PI);
+        ctx.fillStyle = '#333';
+        ctx.fill();
+    }
+
+    function drawNumbers(ctx, radius) {
+        var ang;
+        var num;
+        ctx.font = radius * 0.15 + "px arial";
+        ctx.textBaseline = "middle";
+        ctx.textAlign = "center";
+        for (num = 1; num < 13; num++) {
+            ang = num * Math.PI / 6;
+            ctx.rotate(ang);
+            ctx.translate(0, -radius * 0.85);
+            ctx.rotate(-ang);
+            ctx.fillText(num.toString(), 0, 0);
+            ctx.rotate(ang);
+            ctx.translate(0, radius * 0.85);
+            ctx.rotate(-ang);
+        }
+    }
+
+    function drawTime(ctx, radius) {
+        var now = new Date();
+        var hour = now.getHours();
+        var minute = now.getMinutes();
+        var second = now.getSeconds();
+        //hour
+        hour = hour % 12;
+        hour = (hour * Math.PI / 6) +
+            (minute * Math.PI / (6 * 60)) +
+            (second * Math.PI / (360 * 60));
+        drawHand(ctx, hour, radius * 0.5, radius * 0.07);
+        //minute
+        minute = (minute * Math.PI / 30) + (second * Math.PI / (30 * 60));
+        drawHand(ctx, minute, radius * 0.8, radius * 0.07);
+        // second
+        second = (second * Math.PI / 30);
+        drawHand(ctx, second, radius * 0.9, radius * 0.02);
+    }
+
+    function drawHand(ctx, pos, length, width) {
+        ctx.beginPath();
+        ctx.lineWidth = width;
+        ctx.lineCap = "round";
+        ctx.moveTo(0, 0);
+        ctx.rotate(pos);
+        ctx.lineTo(0, -length);
+        ctx.stroke();
+        ctx.rotate(-pos);
+    }
+</script>
+<script>
+    function timeLive() {
+        var d = new Date();
+        minutes = d.getMinutes().toString().length == 1 ? '0' + d.getMinutes() : d.getMinutes(),
+            seconds = d.getSeconds().toString().length == 1 ? '0' + d.getSeconds() : d.getSeconds(),
+            hours = d.getHours().toString().length == 1 ? '0' + d.getHours() : d.getHours(),
+            ampm = d.getHours() >= 12 ? ' مساء' : ' AM',
+            months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+        if (hours > 12) {
+
+            hours = hours - 12;
+        }
+        hours = hours.toString().length == 1 ? '0' + hours : hours;
+        document.getElementById('txt').innerHTML = '<span id="dat"> ' + days[d.getDay()] + ' ' + months[d.getMonth()] + ' ' + d.getDate() + ' ' + d.getFullYear() + '</span> <br /><span id="tm">' + hours + ':' + minutes + ':' + seconds + ampm + '</span>';
+
+    }
+    setInterval(function() {
+        timeLive();
+    }, 1000);
+
+    function checkTime(i) {
+        if (i < 10) {
+            i = "0" + i
+        }; // add zero in front of numbers < 10
+        return i;
+    }
+</script>
+
+</html>
